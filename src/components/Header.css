@@ -1,0 +1,320 @@
+.header {
+  width: 100%; /* Полная ширина экрана */
+  height: 50vw; /* Фиксированная высота */
+  overflow: hidden; /* Чтобы изображение не выходило за границы */
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.header::before {
+  content: "";
+}
+/* Стили для текста поверх изображения */
+.header-text {
+  position: absolute;
+  top: 50%;
+  right: 5%; /* Расположение текста немного отступает от правого края */
+  transform: translateY(-50%); /* Центрирование текста по вертикали */
+  color: white; /* Цвет текста */
+  text-align: right;
+  width: 45%;
+  z-index: 2;
+  font-feature-settings:"lnum";  
+}
+
+.header-text h1 {
+  font-size: 70px; /* Размер заголовка */
+  margin: 0;
+  font-family: 'TRIAL_Oceanic', sans-serif;
+  font-weight: 700;
+}
+
+.header-text p {
+  font-size: 24px; /* Размер текста под заголовком */
+  margin-left: 100px;
+  margin-top: 40px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Стили для кнопки */
+.header-button {
+  display: inline-block;
+  margin-top: 50px; /* Отступ сверху */
+  padding: 15px 30px; /* Отступы внутри кнопки */
+  background-color: rgba(255, 255, 255, 0.6); /* Полупрозрачный фон кнопки */
+  color: var(--blue); /* Цвет текста */
+  border: none; /* Без рамки */
+  border-radius: 50px; /* Округленные углы */
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 22px;
+  text-decoration: none; /* Убираем подчеркивание */
+  position: relative;
+  overflow: hidden; /* Чтобы анимация не выходила за границы кнопки */
+  transition: background-color 1s ease, color 1s ease; /* Плавная анимация */
+}
+
+.header-button:hover {
+  background-color: var(--blue); /* Изменение цвета фона при наведении */
+  color: #fff; /* Изменение цвета текста при наведении */
+}
+
+.header-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Подгоняет изображение по контейнеру, сохраняя пропорции */
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+
+
+/* Адаптация под планшеты */
+@media (max-width: 1360px) {
+  .header {
+      min-height: 100vh; /* Высота для планшетов */
+      height: auto;
+  }
+
+  .header-text h1 {
+      font-size: 70px; /* Уменьшаем размер заголовка для планшетов */
+      margin-top: 60px;
+  }
+
+  .header-text p {
+      font-size: 24px; /* Уменьшаем размер текста под заголовком для планшетов */
+      margin-left: 50px; /* Уменьшаем отступ слева для планшетов */
+      margin-top: 30px; /* Уменьшаем отступ сверху для планшетов */
+  }
+
+  .header-button {
+      font-size: 24px; /* Уменьшаем размер шрифта кнопки для планшетов */
+      text-align: center;
+  }
+  
+}
+
+
+@media (max-width: 1050px) {
+  .header {
+      height: 100vh; /* Высота для планшетов */
+  }
+
+  .header-text h1 {
+      font-size: 60px; /* Уменьшаем размер заголовка для планшетов */
+      margin-top: 65px;
+  }
+
+  .header-text p {
+      font-size: 22px; /* Уменьшаем размер текста под заголовком для планшетов */
+      margin-left: 50px; /* Уменьшаем отступ слева для планшетов */
+      margin-top: 30px; /* Уменьшаем отступ сверху для планшетов */
+  }
+
+  .header-button {
+      font-size: 22px; /* Уменьшаем размер шрифта кнопки для планшетов */
+  }
+}
+/* Адаптация под мобильные устройства */
+@media (max-width: 768px) {
+  .header {
+      height: 100vh; /* Увеличиваем высоту для мобильных устройств */
+  }
+  .header::before{
+    position: absolute;
+    top: 30%; /*Вверх-вниз градиент*/
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 1));
+    z-index: 1; /* Размещаем фон под текстом */
+  }
+  .header-text {
+      width: 90%; /* Увеличиваем ширину текста */
+      top:80%;
+      right: 5%; /* Убираем отступ справа */
+      text-align: center;
+      
+  }
+  
+  .header-text h1 {
+      font-size: 50px; /* Уменьшаем размер заголовка */
+      display: none;
+  }
+
+  .header-text p {
+      font-size: 20px; /* Уменьшаем размер текста под заголовком */
+      margin-left: 0; /* Убираем отступ слева */
+      margin-top: 20px; /* Уменьшаем отступ сверху */
+  }
+
+  .header-button {
+      margin-top: 30px; /* Уменьшаем отступ сверху для кнопки */
+      font-size: 20px; /* Уменьшаем размер шрифта кнопки */
+  }
+}
+@media (max-width: 525px) {
+  .header {
+      height: 100vh; /* Увеличиваем высоту для мобильных устройств */
+  }
+
+  .header-text {
+    width: 90%; /* Увеличиваем ширину текста */
+    top:80%;
+    right: 5%; /* Убираем отступ справа */
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 40px; /* Уменьшаем размер заголовка */
+}
+
+.header-text p {
+    font-size: 18px; /* Уменьшаем размер текста под заголовком */
+    margin-left: 0; /* Убираем отступ слева */
+    margin-top: 20px; /* Уменьшаем отступ сверху */
+}
+
+.header-button {
+    margin-top: 30px; /* Уменьшаем отступ сверху для кнопки */
+    font-size: 18px; /* Уменьшаем размер шрифта кнопки */
+}
+}
+@media (max-width: 382px) {
+  .header {
+      height: 100vh; /* Увеличиваем высоту для мобильных устройств */
+  }
+
+  .header-text {
+      width: 90%; /* Увеличиваем ширину текста */
+      top:80%;
+      right: 5%; /* Убираем отступ справа */
+  }
+
+  .header-text h1 {
+      font-size: 35px; /* Уменьшаем размер заголовка */
+  }
+
+  .header-text p {
+      font-size: 18px; /* Уменьшаем размер текста под заголовком */
+      margin-left: 0; /* Убираем отступ слева */
+      margin-top: 20px; /* Уменьшаем отступ сверху */
+  }
+
+  .header-button {
+      margin-top: 30px; /* Уменьшаем отступ сверху для кнопки */
+      font-size: 16px; /* Уменьшаем размер шрифта кнопки */
+  }
+}
+
+
+
+@media (max-width: 768px) and (max-height:768px) {
+  
+
+  .header-text {
+      width: 90%; /* Увеличиваем ширину текста */
+      top:80%;
+      
+  }
+}
+@media (max-width: 500px) and (max-height:940px) {
+  
+
+  .header-text {
+      width: 90%; /* Увеличиваем ширину текста */
+      top:80%;
+      
+  }
+}
+@media (max-width: 500px) and (max-height:725px) {
+  
+
+  .header-text {
+      width: 90%; /* Увеличиваем ширину текста */
+      top:75%;
+      
+  }
+}
+@media (max-width: 400px) and (max-height:775px) {
+  
+
+  .header-text {
+      width: 90%; /* Увеличиваем ширину текста */
+      top:75%;
+      
+  }
+}
+
+@media (max-width: 376px) and (max-height:830px) {
+  
+
+  .header-text {
+      width: 90%; /* Увеличиваем ширину текста */
+      top:70%;
+      
+  }
+}
+
+
+@media (max-width: 1360px){
+  
+
+  .header-image{
+    object-position: 100% 0%; /* Сдвиг изображения вправо и по вертикали */
+  }
+}
+@media (max-width: 1200px){
+  .header-image{
+    object-position: 80% 0%; /* Сдвиг изображения вправо и по вертикали */
+  }
+}
+@media (max-width: 1050px){
+  .header-image{
+    object-position: 60% 0%; /* Сдвиг изображения вправо и по вертикали */
+  }
+}
+@media (max-width: 880px){
+  .header-image{
+    object-position: 45% 0%; /* Сдвиг изображения вправо и по вертикали */
+  }
+}
+@media (max-width: 768px){
+  .header-image{
+    object-position: 26% 0%; /* Сдвиг изображения вправо и по вертикали */
+  }
+}
+@media (max-width: 777px){
+  .header-image{
+    object-position: 28% 0%; /* Сдвиг изображения вправо и по вертикали */
+  }
+}
+@media (max-width: 550px){
+  .header-image{
+    object-position: 31% 0%; /* Сдвиг изображения вправо и по вертикали */
+  }
+}
+@media (max-width: 450px){
+  .header-image{
+    object-position: 33% 0%; /* Сдвиг изображения вправо и по вертикали */
+  }
+}
+@media (max-width: 330px){
+  .header-image{
+    object-position: 34% 0%; /* Сдвиг изображения вправо и по вертикали */
+  }
+}
+
+
+
+
+
+

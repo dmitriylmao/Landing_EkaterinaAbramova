@@ -1,0 +1,206 @@
+.fee-container {
+  position: relative;
+  padding: 0px 0; /* Увеличиваем отступы сверху и снизу */
+  background-color: var(--white);
+  flex-direction: column; /* Располагаем карточки по вертикали */
+  align-items: center; /* Центрируем карточки по горизонтали */
+  background-color: var(--white);
+}
+
+.header-text-huy {
+  text-align: center;
+  color: var(--coral);
+}
+
+.header-text-huy h5 {
+  font-family: 'TRIAL_Oceanic', sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  padding-top: 10px;
+}
+.fee-text-down {
+  text-align: center;
+  color: var(--black);
+  font-feature-settings:"lnum";  
+  width: 90%;
+  margin: 20px auto;
+}
+
+.fee-text-down h11 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 28px;
+}
+
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px; /* для отступа от текста */
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+
+.fee-card {
+  margin-right: 0px;
+  width: 428px; /* Ширина карточки */
+  height: 600px; /* Высота карточки */
+  background: #f0f0f0;
+  border-radius: 30px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.fee-card:hover{
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-text-wrapper {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.card-text {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 25px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 28px;
+}
+
+/* Мобильная адаптация */
+@media (max-width: 1360px) {
+  .header-text-huy h5 {
+    font-size: 70px;
+    padding-top: 30px;
+  }
+  .fee-card {
+    margin-right: 20px;
+    width: 428px; /* Ширина карточки */
+    height: 600px; /* Высота карточки */
+  }
+  .card-text {
+    padding: 10px;
+    font-size: 24px;
+  }
+  .fee-text-down h11 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1050px) {
+  .header-text-huy h5 {
+    font-size: 60px;
+  }
+  .fee-card {
+    margin-right: 20px;
+    width: 392px; /* Ширина карточки */
+    height: 550px; /* Высота карточки */
+  }
+  .card-text {
+    padding: 10px;
+    font-size: 22px;
+  }
+  .cards-wrapper{
+    gap: 30px;
+  }
+  .fee-text-down h11 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 940px) {
+  
+  .cards-wrapper{
+    flex-direction: column; /* Располагаем карточки по вертикали */
+    align-items: center; /* Центрируем карточки по горизонтали */
+  }
+}
+@media (max-width: 768px) {
+  .header-text-huy h5 {
+    font-size: 50px;
+  }
+  .fee-card {
+    margin-right: 20px;
+    width: 365px; /* Ширина карточки */
+    height: 500px; /* Высота карточки */
+  }
+  .card-text {
+    padding: 10px;
+    font-size: 20px;
+  }
+  .fee-text-down h11 {
+    font-size: 24px;
+  }
+  .fee-card:hover{
+    margin-top: 75px;
+    margin-bottom: 75px;
+  }
+}
+@media (max-width: 525px) {
+  .header-text-huy h5 {
+    font-size: 40px;
+  }
+  .fee-card {
+    margin-right: 20px;
+    width: 321px; /* Ширина карточки */
+    height: 450px; /* Высота карточки */
+  }
+  .card-text {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .fee-text-down h11 {
+    font-size: 22px;
+  }
+  .fee-card:hover{
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+}
+@media (max-width: 430px) {
+  
+  .fee-card {
+    margin-right: 20px;
+    width: 285px; /* Ширина карточки */
+    height: 400px; /* Высота карточки */
+  }
+  .fee-card:hover{
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 375px) {
+  .header-text-huy h5 {
+    font-size: 40px;
+  }
+  .fee-card {
+    margin-right: 20px;
+    width: 249px; /* Ширина карточки */
+    height: 350px; /* Высота карточки */
+  }
+  .card-text {
+    padding: 10px;
+    font-size: 18px;
+  }
+  .fee-card:hover{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+}

@@ -1,0 +1,90 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #111;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .footer-left {
+    font-size: 18px;
+    font-family: 'TRIAL_Oceanic', sans-serif;
+    font-weight: 300;
+    margin-left:30px;
+  }
+  .footer-right {
+    font-size: 18px;
+    font-family: 'TRIAL_Oceanic', sans-serif;
+    font-weight: 300;
+    margin-right: 30px;
+  }
+  
+  .footer-right a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .footer-right a:hover {
+    color: #acacac;
+  }
+
+
+  @media (max-width: 1360px) {
+    .footer{
+      overflow-x: hidden; /* Скрывает горизонтальный скролл */
+    }
+  .footer-left {
+    font-size: 18px;
+    margin-left:30px;
+  }
+  .footer-right {
+    font-size: 18px;
+    margin-right: 30px;
+  }
+  }
+  @media (max-width: 1050px) {
+    .footer-left {
+      font-size: 17px;
+      margin-left:25px;
+    }
+    .footer-right {
+      font-size: 17px;
+      margin-right: 25px;
+    }
+  }
+  @media (max-width: 768px) {
+    .footer-left {
+      font-size: 16px;
+      margin-left:20px;
+    }
+    .footer-right {
+      font-size: 16px;
+      margin-right: 20px;
+    }
+  }
+  @media (max-width: 525px) {
+    .footer-left {
+      font-size: 15px;
+      margin-left:0px;
+    }
+    .footer-right {
+      font-size: 15px;
+      margin-right: 0px;
+    }
+  }
+  @media (max-width: 420px) {
+    .footer{
+      display: flex;
+      flex-direction: column;
+    }
+    .footer-left {
+      font-size: 15px;
+      margin-left:0px;
+    }
+    .footer-right {
+      display: none;
+    }
+  }

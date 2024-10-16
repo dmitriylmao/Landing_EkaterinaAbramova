@@ -1,0 +1,272 @@
+.guides {
+  padding: 50px;
+  background-color: var(--white);
+  overflow-x: hidden; /* Скрывает горизонтальный скролл */
+  padding: 10px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.guides-title {
+  text-align: center;
+  font-family: 'TRIAL_Oceanic', sans-serif;
+  font-weight: 400;
+  font-size: 70px; 
+  color: var(--coral);
+  width: 60%; /* Ширина текста 60% */
+  margin: 0 auto; /* Горизонтальное выравнивание по центру */
+}
+
+.guides-title2 {
+  text-align: center;
+  font-size: 24px; /* Увеличиваем размер заголовка */
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 60%; /* Ширина текста 60% */
+  margin: 10px auto 20px; /* Горизонтальное выравнивание по центру */
+}
+
+.guides-list {
+  display: flex;
+  flex-direction: column; /* Располагаем карточки по вертикали */
+  align-items: center; /* Центрируем карточки по горизонтали */
+  gap: 30px; /* Расстояние между карточками */
+}
+
+.guide-item {
+  position: relative;
+  width: 550px; /* Увеличиваем ширину карточки */
+  height: 800px; /* Увеличиваем высоту карточки */
+  padding: 20px;
+  background-color: var(--grey);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.guide-content h33 {
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--blue);
+}
+
+.progress-bar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6px; /* Увеличиваем ширину прогресс-бара */
+  background-color: var(--blue);
+  z-index: 1; /* Прогресс-бар будет поверх карточки */
+}
+
+.guide-image {
+  width: 100%;
+  height: 80%; /* Увеличиваем размер изображения */
+  object-fit: cover;
+  border-radius: 40px;
+  z-index: 0;
+}
+
+.guide-content {
+  margin-top: 20px;
+  text-align: center;
+  z-index: 0;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 12px 10px;
+  background-color: var(--grey); /* Белый фон */
+  color: var(--blue); /* Цвет текста черным */
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  border: 1px solid var(--blue); /* Черный контур кнопки */
+  border-radius: 40px;
+  font-size: 16px;
+  
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease; /* Плавный переход */
+}
+
+.pdf-icon {
+  filter: grayscale(); /* Иконка в серых тонах */
+  width: 20px;
+  height: 20px;
+  margin-left: 10px; /* Отступ между иконкой и текстом */
+  transition: filter 0.4s ease; /* Плавный переход фильтра */
+}
+
+.download-btn:hover {
+  background-color: var(--blue); /* Черный фон */
+  color: var(--white); /* Белый цвет текста */
+  border-color: #000000; /* Белая граница */
+}
+
+.download-btn:hover .pdf-icon {
+  filter: grayscale(0%); /* Иконка становится цветной */
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 1360px) {
+  .guides-title {
+    font-size: 70px; 
+    padding-top: 20px;
+    width: 90%; /* Ширина текста 60% */
+    margin: 0 auto 20px; /* Горизонтальное выравнивание по центру */
+  }
+  
+  .guides-title2 {
+    font-size: 24px; 
+    width: 90%; /* Ширина текста 60% */
+    margin: 10px auto 20px; /* Горизонтальное выравнивание по центру */
+  }
+  .guide-item {
+    position: relative;
+    width: 428px; /* Увеличиваем ширину карточки */
+    height: 622px; 
+  }
+  .guide-image {
+    width: 100%;
+    height: 75%; 
+  }
+  .guide-content h33 {
+    font-size: 24px;
+  }
+  .download-btn {
+    font-size: 16px;
+  }
+  
+  .pdf-icon {
+    width: 18px;
+    height: 18px;
+  }
+}
+@media (max-width: 1050px) {
+  .guides-title {
+    margin-bottom: 20px;
+    font-size: 60px; 
+  }
+  
+  .guides-title2 {
+    font-size: 22px; 
+  }
+  .guide-item {
+    position: relative;
+    width: 392px; /* Увеличиваем ширину карточки */
+    height: 570px; 
+  }
+  .guide-image {
+    width: 100%;
+    height: 75%; 
+  }
+  .guide-content h33 {
+    font-size: 22px;
+  }
+  .download-btn {
+    font-size: 16px;
+  }
+  
+  .pdf-icon {
+    width: 16px;
+    height: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .guides-title {
+    margin-bottom: 20px;
+    font-size: 50px; 
+  }
+  
+  .guides-title2 {
+    font-size: 20px; 
+  }
+  .guide-item {
+    position: relative;
+    width: 365px; /* Увеличиваем ширину карточки */
+    height: 530px; 
+  }
+  .guide-image {
+    width: 100%;
+    height: 74%; 
+  }
+  .guide-content h33 {
+    font-size: 20px;
+  }
+  .download-btn {
+    font-size: 15px;
+  }
+  
+  .pdf-icon {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 525px) {
+  .guides-title {
+    margin-bottom: 20px;
+    font-size: 40px; 
+  }
+  
+  .guides-title2 {
+    font-size: 18px; 
+  }
+  .guide-item {
+    position: relative;
+    width: 321px; /* Увеличиваем ширину карточки */
+    height: 466px; 
+  }
+  .guide-image {
+    width: 100%;
+    height: 72%; 
+  }
+  .guide-content h33 {
+    font-size: 18px;
+  }
+  .download-btn {
+    font-size: 14px;
+  }
+  
+  .pdf-icon {
+    width: 14px;
+    height: 14px;
+  }
+}
+@media (max-width: 430px) {
+  
+  .guide-item {
+    position: relative;
+    width: 285px; /* Увеличиваем ширину карточки */
+    height: 414px; 
+  }
+  .guide-image {
+    width: 100%;
+    height: 68%; 
+  }
+}
+@media (max-width: 382px) {
+  .guide-item {
+    position: relative;
+    width: 249px; /* Увеличиваем ширину карточки */
+    height: 362px; 
+  }
+  .guide-image {
+    width: 100%;
+    height: 64%; 
+  }
+}

@@ -1,0 +1,203 @@
+/* ABOUT */
+.biography {
+  padding: 0px 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--white);
+}
+
+.biography-content {
+  width: 60%;
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.biography-text {
+  width: 50%;
+  color: black;
+  padding-right: 0px;
+  margin-top: 30px;
+  position: relative;
+  max-height: 700px;
+  overflow: hidden;
+  transition: max-height 0.8s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  font-feature-settings:"lnum";  
+}
+
+.biography-text.expanded {
+  max-height: 6200px;
+}
+
+.biography-text h1 {
+  font-family: 'TRIAL_Oceanic', sans-serif;
+  font-weight: 700;
+  font-size: 70px; 
+  color: var(--coral);
+  margin: 20px 0 50px 0;
+}
+
+.biography-text p {
+  font-size: 24px;
+  text-align: left;
+  margin: 10px 0px 0px 10px;
+}
+
+.text-container {
+  overflow: hidden;
+}
+
+.biography-img {
+  width: 48%;
+  
+}
+
+.biography-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 30px;
+}
+
+/* Кнопка с заливкой */
+.toggle-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  color: black;
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: relative;
+  z-index: 1;
+  transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+/* При наведении: заливка кнопки цветом */
+.toggle-button:hover {
+  color: white;
+  background-color: var(--coral);
+  border-color: var(--white);
+}
+
+
+
+
+
+@media (max-width: 1360px) {
+  .biography-content {
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px 0px;
+    flex-direction: column; /* Вертикальное расположение для мобильных */
+    align-items: center; /* Центрирование элементов */
+    overflow-x: hidden;
+    overflow-y: hidden;
+  }
+  .biography-text {
+    width: 100%;  
+    order: 2;
+  }
+  .biography-text h1 {
+    font-size: 70px; 
+    margin: 0px 0 20px 0;
+  }
+  
+  .biography-text p {
+    font-size: 24px;
+    text-align: left;
+  }
+  .biography-img {
+    width: 40%;
+    order:1;
+    margin-top: 22px;
+  }
+  .toggle-button {
+    margin-top: 20px;
+    margin-bottom: 22px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 1050px) {
+  .biography-text h1 {
+    font-size: 60px; 
+    margin: 0px 0 20px 0;
+  }
+  
+  .biography-text p {
+    font-size: 22px;
+    text-align: left;
+  }
+  .biography-img {
+    width: 50%;
+    order:1;
+  }
+  .toggle-button {
+    margin-top: 20px;
+    font-size: 22px;
+  }
+}
+@media (max-width: 768px) {
+  .biography-text h1 {
+    font-size: 50px; 
+    margin: 0px 0 20px 0;
+  }
+  
+  .biography-text p {
+    font-size: 20px;
+    text-align: left;
+  }
+  .biography-img {
+    width: 60%;
+    order:1;
+  }
+  .toggle-button {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}
+@media (max-width: 525px) {
+  .biography-text h1 {
+    font-size: 40px; 
+    margin: 0px 0 20px 0;
+  }
+  
+  .biography-text p {
+    font-size: 18px;
+    text-align: left;
+  }
+  .biography-img {
+    width: 70%;
+    order:1;
+  }
+  .toggle-button {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 382px) {
+  .biography-text h1 {
+    margin: 0px 0 20px 0;
+  }
+  
+  .biography-text p {
+    font-size: 18px;
+    text-align: left;
+  }
+  .biography-img {
+    width: 80%;
+    order:1;
+  }
+  .toggle-button {
+    margin-top: 20px;
+    font-size: 18px;
+  }
+}

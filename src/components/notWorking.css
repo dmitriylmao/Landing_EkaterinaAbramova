@@ -1,0 +1,123 @@
+/* Стили для раздела "Образование" */
+.notworking {
+  background-color: var(--blue);
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--blue);
+  padding: 0 ; /* Отступы сверху и снизу */
+}
+
+.notworking-content {
+  width: 60%; /* Фиксированная ширина для контента */
+  margin: 0px auto; /* Центрирование контента */
+  padding: 20px; /* Отступы внутри блока */
+  display: flex; /* Используем Flexbox для разделения на две части */
+}
+
+.notworking-title-1 {
+  font-size: 80px;
+  flex: 1;
+  order: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+
+
+.notworking-text {
+  flex: 1; /* Занимает половину ширины */
+  order: 1;
+  color: black; /* Черный текст */
+  text-align: left; /* Выравнивание текста по левому краю */
+}
+
+.notworking-text h2 {
+  margin-bottom: 10px; /* Отступ снизу для заголовка */
+}
+
+.notworking-text p {
+  margin-top: 0px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+  color: var(--white);
+}
+
+.notworking-title-1 {
+  flex: 1; /* Занимает вторую половину ширины */
+  color: var(--coral);
+  right: 5%; /* Расположение текста немного отступает от правого края */
+  transform: translateY(40%); /* Центрирование текста по вертикали */
+}
+
+.notworking-title-1 h2 {
+  font-family: 'TRIAL_Oceanic', sans-serif;
+  font-weight: 600;
+  font-size: 70px; 
+}
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 1360px) {
+  .notworking-content {
+    flex-direction: column; /* Вертикальное расположение для мобильных */
+    align-items: center; /* Центрирование элементов */
+    width: 90%; /* Фиксированная ширина для контента */
+    overflow-x: hidden; /* Скрывает горизонтальный скролл */
+    padding: 10px 0px;
+  }
+  .notworking-text p {
+    margin-top: 0px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .notworking-title-1 h2 {
+    font-size: 70px; 
+  }
+  .notworking-title-1 {
+    order: 1;
+  }
+  .notworking-text {
+    order: 2;
+  }
+}
+@media (max-width: 1050px) {
+  .notworking-text p {
+    margin-top: 0px;
+    font-size: 22px;
+  }
+  .notworking-title-1 h2 {
+    font-size: 60px; 
+  }
+}
+@media (max-width: 768px) {
+  .notworking-text p {
+    margin-top: 0px;
+    font-size: 20px;
+  }
+  .notworking-title-1 h2 {
+    font-size: 50px; 
+  }
+}
+@media (max-width: 525px) {
+  .notworking-text p {
+    margin-top: 0px;
+    font-size: 18px;
+  }
+  .notworking-title-1 h2 {
+    font-size: 40px; 
+  }
+
+}
+@media (max-width: 382px) {
+  .notworking-text p {
+    margin-top: 0px;
+    font-size: 18px;
+  }
+  .notworking-title-1 h2 {
+    font-size: 40px; 
+  }
+}

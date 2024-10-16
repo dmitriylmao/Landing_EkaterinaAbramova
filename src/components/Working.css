@@ -1,0 +1,157 @@
+/* Стили для раздела "Образование" */
+.working {
+  background-color: var(--white);
+  padding: 0px 0; /* Отступы сверху и снизу */
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--white);
+}
+
+.working-content {
+  max-width: 60%; /* Фиксированная ширина для контента */
+  margin: 0 auto; /* Центрирование контента */
+  padding: 20px; /* Отступы внутри блока */
+  display: flex; /* Используем Flexbox для разделения на две части */
+}
+
+.working-title-1 {
+  font-size: 50px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.working-title-1 h2 {
+  font-size: 50px;
+  font-family: "Dela Gothic One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.working-text {
+  flex: 1; /* Занимает половину ширины */
+  color: var(--black); /* Черный текст */
+  text-align: left; /* Выравнивание текста по левому краю */
+  padding-left: 20px;
+}
+
+.working-text ul {
+  list-style-position: outside; /* Устанавливаем позицию маркеров вне блока */
+  padding-left: 20px; /* Устанавливаем отступ для списка */
+  margin-left: 0px; /* Убираем отступы у списка */
+}
+
+.working-text li {
+  margin-left: 0; /* Убираем отступ слева для элементов списка */
+  padding-left: 0; /* Убираем отступ для текста рядом с маркером */
+  font-size: 24px;
+  line-height: 1.5; /* Увеличиваем межстрочный интервал для лучшего выравнивания */
+  list-style-type: "- ";
+}
+
+.working-text p {
+  margin-top: 30px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.working-title-1 {
+  font-size: 50px; /* Размер текста кнопки */
+  flex: 1; /* Занимает вторую половину ширины */
+  color: var(--coral);
+  right: 5%; /* Расположение текста немного отступает от правого края */
+  transform: translateY(40%); /* Центрирование текста по вертикали */
+}
+
+.working-title-1 h2 {
+  font-family: 'TRIAL_Oceanic', sans-serif;
+  font-weight: 500;
+  font-size: 70px; 
+}
+
+
+
+/* Адаптация под мобильные устройства */
+@media (max-width: 1360px) {
+  .working-title-1 h2 {
+    font-size: 70px; 
+  }
+  .working-text p {
+    margin-top: 30px;
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .working-content {
+    flex-direction: column;
+    max-width: 90%; /* Фиксированная ширина для контента */
+    padding: 10px 0px;
+    overflow-x: hidden; /* Скрывает горизонтальный скролл */
+  }
+  .working-text li {
+    font-size: 24px;
+  }
+  .working-text ul {
+    
+    padding-left: 0px; /* Устанавливаем отступ для списка */
+    
+  }
+}
+
+@media (max-width: 1050px) {
+  .working-title-1 h2 {
+    font-size: 60px; 
+  }
+  .working-text p {
+    margin-top: 30px;    
+    font-size: 24px;
+  }
+  .working-text li {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .working-title-1 h2 {
+    font-size: 50px; 
+  }
+  .working-text p {
+    margin-top: 30px;    
+    font-size: 22px;
+  }
+  .working-text li {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 525px) {
+  .working-title-1 h2 {
+    font-size: 40px; 
+  }
+  .working-text p {
+    margin-top: 30px;    
+    font-size: 20px;
+  }
+  .working-text li {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 382px) {
+  .working-title-1 h2 {
+    font-size: 40px; 
+  }
+  .working-text p {
+    margin-top: 30px;    
+    font-size: 20px;
+  }
+  .working-text li {
+    font-size: 18px;
+  }
+}
+
+

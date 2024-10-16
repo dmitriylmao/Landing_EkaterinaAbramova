@@ -1,0 +1,84 @@
+/* Сброс отступов для всех элементов */
+@font-face {
+  font-family: 'TRIAL_Oceanic';
+  src: url('./fonts/TRIAL_Oceanic-Extrabold-BF6487cfe5e8eff.otf') format('opentype');
+  font-weight: 800; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TRIAL_Oceanic';
+  src: url('./fonts/TRIAL_Oceanic-Bold-BF6487cfe5cfe3d.otf') format('opentype');
+  font-weight: 700; /* Bold */
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TRIAL_Oceanic';
+  src: url('./fonts/TRIAL_Oceanic-Light-BF6487cfe5eb596.otf') format('opentype');
+  font-weight: 400; 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TRIAL_Oceanic';
+  src: url('./fonts/TRIAL_Oceanic-Medium-BF6487cfe5e2078.otf') format('opentype');
+  font-weight: 600; 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TRIAL_Oceanic';
+  src: url('./fonts/TRIAL_Oceanic-Poster-BF6487cfe5ecab1.otf') format('opentype');
+  font-weight: 900; 
+  font-style: normal;
+}
+@font-face {
+  font-family: 'TRIAL_Oceanic';
+  src: url('./fonts/TRIAL_Oceanic-Regular-BF6487cfe600a81.otf') format('opentype');
+  font-weight: 500; 
+  font-style: normal;
+}
+:root {
+  --blue: rgb(42, 63, 85);
+ --coral: rgb(210, 99, 89);
+ --white: rgb(255, 255, 255);
+ --black: rgb(0, 0, 0);
+ --grey:rgb(229, 229, 229);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  padding: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+ 
+body::-webkit-scrollbar-track { 
+  background-color: var(--blue);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: var(--coral);
+}
+
+
+
+
+

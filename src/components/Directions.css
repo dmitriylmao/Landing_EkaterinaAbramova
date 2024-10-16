@@ -1,0 +1,92 @@
+/* ABOUT */
+/* Стили для раздела "Обо мне" */
+.directions {
+  background-color: var(--white);
+  padding: 0px 0; /* Увеличиваем отступы сверху и снизу */
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--blue);
+}
+
+.directions-content {
+  width: 60%;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Располагаем карточки по вертикали */
+  align-items: center; /* Центрируем карточки по горизонтали */
+}
+
+.directions-text {
+  flex: 1; /* Занимает половину ширины */
+  color: rgb(255, 255, 255); /* Черный текст */
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-feature-settings:"lnum";  
+}
+
+.directions-text p {
+  font-size: 24px; /* Увеличиваем размер шрифта */
+}
+
+/* Заголовок */
+.directions-title-1 {
+  flex: 1;
+  color: var(--coral);
+  display: flex;
+  justify-content: flex-end; /* Выравнивание по правому краю */
+  align-items: center;
+  padding-right: 0px;
+}
+
+.directions-title-1 h2 {
+  font-family: 'TRIAL_Oceanic', sans-serif;
+  font-weight: 700;
+  font-size: 70px; /* Размер шрифта заголовка */
+}
+
+@media (max-width: 1360px) {
+  .directions-content {
+    width: 90%;
+    padding: 10px 0px;
+    display: flex;
+    overflow-x: hidden; /* Скрывает горизонтальный скролл */
+  }
+  .directions-text p {
+    font-size: 24px; /* Увеличиваем размер шрифта */
+  }
+  .directions-title-1 h2 {
+    font-size: 70px; /* Размер шрифта заголовка */
+    margin-top: 20px;
+  }
+  .directions-text {
+    text-align: start;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 1050px) {
+  .directions-text p {
+    font-size: 22px; /* Увеличиваем размер шрифта */
+  }
+  .directions-title-1 h2 {
+    font-size: 60px; /* Размер шрифта заголовка */
+  }
+}
+@media (max-width: 768px) {
+  .directions-text p {
+    font-size: 20px; /* Увеличиваем размер шрифта */
+  }
+  .directions-title-1 h2 {
+    font-size: 50px; /* Размер шрифта заголовка */
+  }
+}
+@media (max-width: 525px) {
+  .directions-text p {
+    font-size: 18px; /* Увеличиваем размер шрифта */
+  }
+  .directions-title-1 h2 {
+    font-size: 40px; /* Размер шрифта заголовка */
+  }
+}
+

@@ -1,0 +1,146 @@
+/* Стили для раздела "Образование" */
+.education {
+  background-color: var(--coral);
+  padding: 0px 0; /* Отступы сверху и снизу */
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--coral);
+}
+
+.education-content {
+  width: 60%; /* Фиксированная ширина для контента */
+  margin: 0 auto; /* Центрирование контента */
+  padding: 20px; /* Отступы внутри блока */
+  display: flex; /* Используем Flexbox для разделения на две части */
+  flex-wrap: wrap; /* Обеспечиваем обтекание элементов */
+}
+.education-text {
+  flex: 1; /* Занимает половину ширины */
+  color: var(--white); /* Черный текст */
+  text-align: left; /* Выравнивание текста по левому краю */
+  font-feature-settings:"lnum";  
+}
+
+.education-text p {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.education-text ul {
+  list-style-position: outside; /* Устанавливаем позицию маркеров вне блока */
+  padding-left: 20px; /* Устанавливаем отступ для списка */
+  margin: 0; /* Убираем отступы у списка */
+}
+
+.education-text li {
+  margin-top: 10px;
+  margin-left: 0; /* Убираем отступ слева для элементов списка */
+  padding-left: 0; /* Убираем отступ для текста рядом с маркером */
+  font-size: 24px;
+  line-height: 1.5; /* Увеличиваем межстрочный интервал для лучшего выравнивания */
+  list-style-type: "- ";
+}
+
+.education-title-1 {
+  flex: 1;
+  color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 20px;
+}
+
+.education-title-1 h2 {
+  font-family: 'TRIAL_Oceanic', sans-serif;
+  font-weight: 800;
+  font-size: 70px; 
+}
+
+/* Мобильная адаптация */
+@media (max-width: 1360px) {
+  .education-content {
+    flex-direction: column; /* Вертикальное расположение для мобильных */
+    align-items: center; /* Центрирование элементов */
+    width: 90%; /* Фиксированная ширина для контента */
+    overflow-x: hidden; /* Скрывает горизонтальный скролл */
+    padding: 10px 0px;
+  }
+  
+  .education-text {
+    margin-bottom: 12px;
+  }
+  .education-text p {
+    font-size: 28px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .education-text li {
+    font-size: 24px;
+  }
+  .education-title-1 h2 {
+    font-size: 70px; 
+  }
+  .education-title-1 {
+    padding-top: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .education-text p {
+    font-size: 26px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .education-text li {
+    font-size: 22px;
+  }
+  .education-title-1 h2 {
+    font-size: 60px; 
+  }
+}
+@media (max-width: 768px) {
+  .education-text p {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .education-text li {
+    font-size: 20px;
+  }
+  .education-title-1 h2 {
+    font-size: 50px; 
+  }
+  .education-title-1 {
+    padding-top: 10px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 525px) {
+  .education-text p {
+    font-size: 22px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .education-text li {
+    font-size: 18px;
+  }
+  .education-title-1 h2 {
+    font-size: 40px; 
+  }
+  .education-title-1 {
+    padding-top: 15px;
+    padding-right: 0px;
+  }
+}
+@media (max-width: 382px) {
+  
+}
