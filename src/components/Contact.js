@@ -47,13 +47,13 @@ const Contact = () => {
             viewport={{ once: false }}
           >
             <motion.a
-              href="mailto:ekaterinakolosova9529@gmail.com"
+              href="mailto:ekaterina_abramova1@mail.ru"
               className="contact-link"
               whileHover={{ scale: 1.05, color: '#999999' }}
               transition={{ duration: 0.05 }}
             >
               <img src={mail} alt="Email" />
-              <span>ekaterinakolosova9529@gmail.com</span>
+              <span>ekaterina_abramova1@mail.ru</span>
             </motion.a>
           </motion.div>
 
